@@ -1,0 +1,21 @@
+##    Interface: 120007
+
+##      Version: 6.120007
+
+##        Title: Ruderalis - Moneytor
+
+##       Author: git.ruderalis.fr
+
+##  IconTexture: Interface/Icons/ui_plundercoins.blp
+
+##     Category: Ruderal Interface Software
+
+##        Notes: Simple funds I/O monitor.
+
+##   Notes-frFR: Moniteur simple d'E/S de fonds.
+
+## Dependencies: Ruderalib
+
+ProgramLibrary.lua
+
+ProgramRuntime.lua
