@@ -75,8 +75,7 @@ Moneytor.Frame.Main:SetScript('OnEvent', function(self, event)
 
     end
 
-    SendSystemMessage(report .. " = "
-      .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney)))
+    SendSystemMessage(report .. " = " .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney)))
 
     currentMoney = nextMoney
 
