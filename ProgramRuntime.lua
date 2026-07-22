@@ -58,8 +58,6 @@ Moneytor.Frame.Main:SetScript('OnEvent', function(self, event)
           .. " "
           .. Ruderalib.Color:ColorString(GetCoinTextureString(currentMoney - nextMoney))
           .. Ruderalib.Color:ColorString(']', Ruderalib.Color.RED)
-          .. " = "
-          .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney))
 
     elseif nextMoney > currentMoney then
 
@@ -67,8 +65,6 @@ Moneytor.Frame.Main:SetScript('OnEvent', function(self, event)
           .. " "
           .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney - currentMoney))
           .. Ruderalib.Color:ColorString(']', Ruderalib.Color.GREEN)
-          .. " = "
-          .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney))
 
     end
 
@@ -79,7 +75,8 @@ Moneytor.Frame.Main:SetScript('OnEvent', function(self, event)
 
     end
 
-    SendSystemMessage(report)
+    SendSystemMessage(report .. " = "
+      .. Ruderalib.Color:ColorString(GetCoinTextureString(nextMoney)))
 
     currentMoney = nextMoney
 
